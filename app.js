@@ -10,5 +10,17 @@ $(document).ready(function(){
 			};
 		});
 
+		$.ajax({
+			url : ' http://openweathermap.org',
+			type : 'GET',
+			dataType : 'HTML',
+			success : function(meteo){
+				$('#meteo').html(meteo);
+			}
+		})
 	});
+
+
 });
+
+
