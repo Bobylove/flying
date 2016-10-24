@@ -11,12 +11,15 @@ $(document).ready(function(){
 		});
 
 		$.ajax({
+			dataMeteo: "meteo toulouse",
 			url : ' http://openweathermap.org',
 			type : 'GET',
-			dataType : 'HTML',
-			success : function(meteo){
+			dataType : 'HTML'
+		
+			});
+	
+			success :(function(meteo){
 				$('#meteo').html(meteo);
-			}
 		})
 	});
 
