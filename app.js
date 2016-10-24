@@ -17,10 +17,12 @@ $(document).ready(function(){
 			dataType : 'HTML'
 		
 			});
-	
+			
 			success :(function(meteo){
-				$('#meteo').html(meteo);
-		})
+				$('#meteo').weatherfeed(['FRXX0055']);
+				console.log("ok");
+				$("#weather").click(.HTML(););
+									})
 	});
 
 
